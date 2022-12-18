@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter';
+}
+
+a{
+    text-decoration: none;
+}
+
+.content_contacs{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.title_contact{
+    font-weight: 600;
+    font-size: 41px;
+    line-height: 50px;
+}
+
+
+form{
+    margin-top: 40px;
+}
+
+
+input{
+    border: 1px solid #B3B3B3;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    color: #ACACAC;
+    padding: 13px 18px;
+    width: 400px;
+    margin-top: 20px;
+    outline: none;
+}
+
+.social_media_btn{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 36px;
+    align-items: center;
+}
+
+.left_btn button{
+    padding: 13px 40px;
+    background: #F95B00;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+}
+
+.left_btn button:hover{
+    background-color: #fd7120;
+}
+
+
+.right_socail{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+@media(max-width:1024px){
+    .right img{
+        width: 450px;
+    }
+}
+
+
+@media(max-width:768px){
+    .content_contacs{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .title_contact{
+        text-align: center;
+        margin-top: 36px;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    .social_media_btn{
+        width: 100%;
+    }
+
+    .left_btn button {
+        padding: 15px 65px;
+    }
+}
+
+@media(max-width:425px){
+    .right img{
+        display: none;
+    }
+
+    .social_media_btn {
+        display: block;
+    }
+
+    .left_btn button {
+        padding: 15px 65px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .right_socail {
+        margin-top: 36px;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .title_contact {
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+
+@media (max-width: 320px){
+   .title_contact {
+        text-align: center;
+        margin-top: 28px;
+        font-size: 35px;
+    }
+}
